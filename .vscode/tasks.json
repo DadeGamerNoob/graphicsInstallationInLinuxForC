@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with GCC 11.4.0",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"./bin/${fileBasenameNoExtension}",
+				"-lSDL_bgi",
+				"-lSDL2"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/gcc"
+		}
+	]
+}
